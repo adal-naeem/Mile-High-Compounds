@@ -1,0 +1,421 @@
+/* ========================== Global Reset ========================== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ========================== Wrapper & Background ========================== */
+.wrapper {
+  width: 100%;
+  height: 651px;
+  overflow: hidden;
+  position: relative;
+}
+
+.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 651px;
+  background-image: url("https://milehighcompounds.com/wp-content/uploads/2025/06/large-vecteezy_ai-generated-a-close-up-of-scientists-hands-conducting-drug_41927764_large-copy.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: scale(1.2);
+  animation: zoomOutBG 10s ease-out forwards;
+  z-index: 0;
+}
+
+@keyframes zoomOutBG {
+  to {
+    transform: scale(1);
+  }
+}
+
+/* ========================== Header Layout ========================== */
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 27.96vh;
+}
+
+
+.container1 {
+  width: 100%;
+  height: 42px;
+  background-color: #0b3d92;
+  display: flex;
+  justify-content: center;
+}
+
+.nav1 {
+  width: 94.07%;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.main-nav {
+  font-size: 16px;
+  height: 39px;
+  width: 342px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  padding: 9px 0 8px;
+  margin: 0;
+}
+
+.main-nav li {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.main-nav li .material-symbols-outlined {
+  color: #fff;
+  font-size: 12px;
+  margin-right: 7px;
+}
+
+.main-nav li span:not(.material-symbols-outlined) {
+  color: #fff;
+  font-size: 12px;
+}
+
+.links {
+  border-bottom: 1px solid transparent;
+  text-decoration: none;
+}
+
+.links:hover {
+  border-bottom: 1px solid white;
+}
+
+
+.container2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  backdrop-filter: blur(12px);
+  height: 140px;
+}
+
+.nav2 {
+  width: 94.07%;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0;
+}
+
+.logo-link {
+  flex-shrink: 0;
+}
+
+.logo-link img {
+  width: 278px;
+  height: 110px;
+  object-fit: contain;
+}
+
+
+.flex-spacer {
+  flex-grow: 1;
+}
+
+
+nav.main-menu {
+  width: 744px;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Poppins", sans-serif;
+}
+
+
+.menu-links {
+  width: 78.75%;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-links li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-links li a {
+  color: white;
+  font-size: 17px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: border 0.3s ease;
+  padding: 10px;
+}
+
+.menu-links li a:hover {
+  border-bottom: 2px solid white;
+}
+
+.menu-links .item1 { width: 13.85%; }
+.menu-links .item2 { width: 15.22%; }
+.menu-links .item3 { width: 13.74%; }
+.menu-links .item4 { width: 13.25%; }
+.menu-links .item5 { width: 13.09%; }
+.menu-links .item6 { width: 11.25%; }
+.menu-links .item7 { width: 19.61%; }
+
+
+.menu-icons {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 21px;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-icons li .material-symbols-outlined {
+  color: #fff;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+/* ========================== Main Hero Section ========================== */
+.mhc-hero-section {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.72);
+}
+
+.hs-inner {
+  height: 100vh;
+  width: 94.07%;
+  display: flex;
+  align-items: center;
+}
+
+.hs-container {
+  height: 70.2%;
+  width: 100%;
+  display: flex;
+  margin: 0 10.391px;
+}
+
+.block {
+  width: 50%;
+  height: 100%;
+}
+
+/* ========================== HS Details Column Section ========================== */
+.hs-details {
+  display: flex;
+  flex-direction: column;
+  width: 45vw;
+  max-width: 622.05px;
+  height: auto;
+  position: relative;
+  left: -9px;
+  top: 15px;
+  animation: slideInFromLeft 1s ease-out;
+  animation-delay: 1s;
+  animation-fill-mode: both;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.first-detail {
+  width: 100%;
+  height: 6vh;
+}
+
+.second-detail {
+  width: 100%;
+  height: auto;
+  margin-bottom: 2vh;
+}
+
+.second-detail h1 {
+  height: auto;
+  font-family: 'Barlow Condensed';
+  font-size: clamp(32px, 8vw, 82px);
+  font-weight: 600;
+  line-height: clamp(38px, 9vw, 88.5px);
+  color: #fff;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.third-detail {
+  width: 100%;
+  height: auto;
+  margin-bottom: 2vh;
+}
+
+.third-detail h4 {
+  color: #fff;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: clamp(18px, 4vw, 30px);
+  font-weight: 600;
+  line-height: clamp(24px, 5vw, 40px);
+  text-transform: uppercase;
+  width: 100%;
+  margin-bottom: 8px;
+  margin-top: 0;
+  position: relative;
+    top: 13px;
+}
+
+.third-detail h6 {
+  color: #fff;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: clamp(12px, 3vw, 20px);
+  font-weight: 600;
+  line-height: clamp(18px, 4vw, 30px);
+  text-transform: uppercase;
+  width: 100%;
+  margin: 0;
+  position: relative;
+    top: 13px;
+}
+
+.forth-detail {
+  width: 100%;
+  height: 3vh;
+}
+
+.fifth-detail {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  position: relative;
+  top: 28px;
+}
+
+.hs-btn-learn-more,
+.hs-btn-shop-nows {
+  font-size: clamp(14px, 3vw, 18px);
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  line-height: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: clamp(160px, 40vw, 207.812px);
+  height: clamp(50px, 12vw, 66px);
+  margin: 0 20px 7px 0;
+  border-radius: 5px;
+  box-sizing: border-box;
+  border: 2px solid white;
+}
+
+.hs-btn-learn-more {
+  background-color: #fff;
+  color: #000;
+}
+
+.hs-btn-shop-nows {
+  background-color: transparent;
+  color: #fff;
+}
+
+/* ========================== SVG Shape Divider ========================== */
+.top-diagonal {
+  position: absolute;
+  top: 451px;
+  left: 0;
+  width: 100vw;
+  height: 200px;
+  pointer-events: none;
+}
+
+/* ========================== Responsive ========================== */
+@media (max-width: 1024px) {
+  .logo-link img {
+    width: 200px;
+  }
+
+  .flex-spacer {
+    flex-grow: 1;
+  }
+
+  .menu-links {
+    display: none;
+  }
+
+  .menu-icons {
+    gap: 12px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .container2,
+  .nav2,
+  nav.main-menu {
+    height: 89px;
+  }
+
+  .logo-link img {
+    height: 70px;
+    width: auto;
+  }
+
+  .menu-icons li {
+    height: auto;
+  }
+}
+
+@media (max-width: 700px) {
+  .container1 {
+    display: none;
+  }
+
+  .nav2 {
+    gap: 10px;
+  }
+
+  .logo-link img {
+    width: 150px;
+  }
+
+  .menu-icons {
+    gap: 10px;
+  }
+}
